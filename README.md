@@ -1,21 +1,22 @@
-# Smart Unit Converter
+# Digital Stopwatch
 
-A simple Android app for converting common length and weight units.
+A lightweight Android stopwatch with start, hold, reset, and stop controls.
 
 ## Features
 
-- Centimeters to meters
-- Meters to centimeters
-- Grams to kilograms
-- Kilograms to grams
-- Numeric input validation
-- Results formatted to two decimal places
+- Start and resume timing
+- Hold/pause the timer
+- Reset a paused timer
+- Stop and clear the timer
+- Minutes, seconds, and centiseconds display
+- Button states that prevent invalid actions
+- Timer callback cleanup when the activity is destroyed
 
 ## Built with
 
-- Kotlin
+- Java
 - Android Views and XML layouts
-- Spinner-based conversion selector
+- `Handler` and `SystemClock` for time updates
 - Android SDK 24+
 
 ## Run locally
@@ -27,4 +28,4 @@ A simple Android app for converting common length and weight units.
 
 ## Project structure
 
-`MainActivity` handles the conversion options, input validation, calculation, and result display.
+`MainActivity` manages stopwatch state, elapsed-time calculation, recurring display updates, and control-button behavior.
